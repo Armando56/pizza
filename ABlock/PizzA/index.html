@@ -8,46 +8,83 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <img src="images/logo.png" alt="Logo">
-      <ul>
-        <li><a href="#">Newsletter</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact US</a></li>
-      </ul>
+      <div class="navigation">
+        <img src="images/logo.png" alt="Logo">
+        <ul class="nav">
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact US</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
 
   <section class="banner">
     <div class="container">
-      <h1>Create Your Own Pizza</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      <h1 class="title">Create Your Own Pizza</h1>
+      <p class="descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+        the industry's
         standard dummy since the 1500s.</p>
-      <a href="Read More"></a>
-      <img src="images/pizza.png" alt="Pizza">
+      <a class="btn" href="#">Read More</a>
+      <img class="pizza" src="images/pizza.png" alt="Pizza">
     </div>
   </section>
 
 
   <section class="page">
     <div class="container">
-      <h2>HOW TO PROGRESS?</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesettin</p>
-      <ul>
-        <li><a href="#">pizza cartoon</a></li>
+      <div class="center">
+        <h2 class="h2">HOW TO PROGRESS?</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesettin</p>
+      </div>
+      <ul class="menu">
+        <li><a class="active" href="#">pizza cartoon</a></li>
         <li><a href="#">Burger</a></li>
         <li><a href="#">sandwich</a></li>
         <li><a href="#">LOREMISPSUM</a></li>
       </ul>
+      <div class="box">
+        <div class="box-item">
+          <p class="number number-one">1</p>
+          <div class="box-text">
+            <h3>CREATE IT</h3>
+            <p>Choose from a selection of
+              tastilicious toppings to create
+              your own pizza</p>
+          </div>
+        </div>
+        <div class="box-item">
+          <p class="number number-two">2</p>
+          <div class="box-text">
+            <h3>NAME IT</h3>
+            <p>Choose from a selection of
+              tastilicious toppings to create
+              your own pizza</p>
+          </div>
+        </div>
+        <div class="box-item">
+          <p class="number number-three">3</p>
+          <div class="box-text">
+            <h3>FAME IT</h3>
+            <p>Choose from a selection of
+              tastilicious toppings to create
+              your own pizza</p>
+          </div>
+        </div>
+      </div>
+      <p class="center">
+        <a class="btn-start" href="#">CREATE YOUR LEGEND</a>
+      </p>
     </div>
-    <a href="#">CREATE YOUR LEGEND</a>
   </section>
 
 
