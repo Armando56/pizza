@@ -29,7 +29,7 @@ body{
 }
 
 .nav>li{
-    padding-left: 23px;
+    padding-left: 22px;
     margin-left: 22px;
     position: relative;
 }
@@ -51,6 +51,11 @@ body{
 
 .nav>li:first-child::before{
     display: none;
+}
+
+.nav>li:first-child{
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .nav>li>a{
@@ -300,4 +305,65 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 800px;
+    }
+    .pizza{
+        display: none;
+    }
+    .banner{
+        padding: 76px 0 100px;
+    }
+    .h2, .box-text h3{
+        font-size: 35px;
+    }
+    .h2 + p {
+        font-size: 18px;
+    }
+    .menu > li{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .box-text{
+        border-right: none;
+        padding-right: 0;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    .box-item{
+        padding: 30px 55px 24px 55px;
+    }
+    .box-item:last-child .box-text{
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .navigation{
+        flex-direction: column;
+    }
+    .nav{
+        margin-top: 34px;
+    }
+    .h2::before, .h2::after {
+        display: none;
+    }
+    .btn-start{
+        background-size: contain;
+        font-size: 20px;
+    }
+    .footer{
+        padding: 13px 0;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 800px){
+
 }
